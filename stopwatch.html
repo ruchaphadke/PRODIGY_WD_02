@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title>Design Stopwatch using HTML CSS and JavaScript</title> 
+	<link rel="stylesheet" href="stopwatch.css"> 
+</head> 
+
+<body> 
+	<div class="container"> 
+		<h1>Web Development<br> 
+			Stop Watch</h1> 
+		<div id="time"> 
+			<span class="digit" id="hr"> 
+				00</span> 
+			<span class="txt" >&nbsp;Hr  &nbsp;</span> 
+			<span class="digit" id="min"> 
+				00</span> 
+			<span class="txt"> &nbsp;Min  &nbsp;</span> 
+			<span class="digit" id="sec"> 
+				00</span> 
+			<span class="txt">&nbsp;Sec</span> 
+			
+
+                <div id="lapse" class="d-none">
+					<h2>Lap time</h2>
+                    <span class="digit_lap" id="hourr"> 
+                       &nbsp; 00</span> 
+                    <span class="txt_lap"> &nbsp;Hr &nbsp;</span> 
+                    <span class="digit_lap" id="minutess"> 
+                        00</span> 
+                    <span class="txt_lap">&nbsp; Min &nbsp;</span> 
+                    <span class="digit_lap" id="secondss"> 
+                        <center>00</center></span> 
+                    <span class="txt_lap">&nbsp;Sec</span> 
+                </div>
+		</div> 
+		<div id="buttons"> 
+			<button class="btn" id="start"> 
+				Start</button> 
+			<button class="btn d-none" id="stop"> 
+				Stop</button> 
+			<button class="btn d-none" id="reset"> 
+				Reset</button> 
+                <button class="btn d-none" id="resume"> 
+                    Resume</button> 
+                    <button class="btn disabled" id="lap"> 
+                        Lap </button> 
+		</div> 
+	</div> 
+
+	<script src="stopwatch.js"></script> 
+</body> 
+	
+</html>
